@@ -1,0 +1,42 @@
+:root { 
+    --navy: #0B1F3A; 
+    --gold: #C9952A; 
+    --white: #FFFFFF; 
+    --cream: #F9F6F0; 
+    --red: #dc2626; 
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { 
+    font-family: 'DM Sans', sans-serif; 
+    color: var(--navy); 
+    line-height: 1.6; 
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Dynamic Navigation */
+nav { 
+    position: fixed; top: 0; width: 100%; z-index: 1000; 
+    background: var(--white); border-bottom: 1px solid #E5E7EB; 
+    display: flex; align-items: center; justify-content: space-between; 
+    padding: 0 5%; height: 70px; 
+}
+
+.logo { font-family: 'Playfair Display', serif; font-weight: 900; text-decoration: none; color: var(--navy); }
+
+/* Responsive Container */
+.container { width: 90%; max-width: 1100px; margin: 0 auto; }
+
+/* Mobile-First Hero */
+.hero { padding: 120px 5% 60px; background: var(--navy); color: white; text-align: center; }
+
+/* Dynamic Floating Call Button for Mobile Only */
+.float-btn { 
+    position: fixed; bottom: 20px; right: 20px; 
+    background: var(--red); color: white; width: 65px; height: 65px; 
+    border-radius: 50%; display: flex; align-items: center; justify-content: center; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 2000; 
+}
+
+@media (min-width: 768px) { .float-btn { display: none; } }
