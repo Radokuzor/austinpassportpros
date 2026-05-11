@@ -94,6 +94,21 @@ nav a:hover { color: var(--gold); }
 
 .nav-cta:hover { background: #d4a820 !important; color: var(--navy) !important; }
 
+.nav-outline {
+  border: 1.5px solid rgba(255,255,255,0.55) !important;
+  color: var(--white) !important;
+  padding: 7px 15px;
+  border-radius: 4px;
+  font-weight: 600 !important;
+  transition: border-color 0.2s, background 0.2s !important;
+}
+
+.nav-outline:hover {
+  border-color: var(--white) !important;
+  background: rgba(255,255,255,0.08) !important;
+  color: var(--white) !important;
+}
+
 .hamburger {
   display: none;
   flex-direction: column;
